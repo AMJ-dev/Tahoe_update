@@ -1,0 +1,3 @@
+Actions:
+Revised release checklist here: https://github.com/AMJ-dev/tahoe-lafs/blob/master/docs/release-checklist.rst
+fixed https://www.tahoe-lafs.org/trac/tahoe-lafs/ticket/3696# ( I tested the fix but tahoe wouldnt run due an error message that says Tahoe cannot run on python 3)
