@@ -35,7 +35,8 @@ python --version
 
 apt-get install build-essential python-dev libffi-dev libssl-dev libyaml-dev virtualenv
 
-9. Confirm Pip works. Many Python installations already include pip, but in case yours does not, get it with the pip install instructions:
+9. Confirm Pip works. Many Python installations already include pip, but in case yours does not, 
+get pip for python 2 with: 'curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py' and run 'python get-pip.py'
 
 pip --version
 
