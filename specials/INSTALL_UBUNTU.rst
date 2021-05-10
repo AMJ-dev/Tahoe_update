@@ -4,50 +4,50 @@ Tahoe-lafs users will have to install Python 2, and switch to Python 2 to be abl
 
 The following instructions are for installing tahoe on Ubuntu 20.04: 
 
-1.Install Python 2
+1. Install Python 2
 'sudo apt install python'
 
-2.Once the installation completes, you can check the Python 2, and python 3 version using the “–version” command.
+2. Once the installation completes, you can check the Python 2, and python 3 version using the “–version” command.
 
 'python2 --version'
 'python3 --version'
 
-3.Check all the available Python versions in your system.
+3. Check all the available Python versions in your system.
 
 'ls /usr/bin/python'
 
-4.Check whether there are any Python-alternatives configured.
+4. Check whether there are any Python-alternatives configured.
 
 'sudo update-alternatives --list python'
 
 
-5.Configure two Python alternatives. From the Step above, depending on the version of python in your system we will set our priority.
+5. Configure two Python alternatives. From the Step above, depending on the version of python in your system we will set our priority.
 
 'sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 1'
 'sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2'
 
-6.Confirm if the Python alternatives are set and whether they are in use.
+6. Confirm if the Python alternatives are set and whether they are in use.
 
 'sudo update-alternatives --config python'
 
-7.Check the Python version currently running on the system.(it should show Python 2)
+7. Check the Python version currently running on the system.(it should show Python 2)
 
 'python --version'
 
-8.Install everything needed to run Tahoe. On a modern Debian/Ubuntu-derived distribution, this command will get you everything you need:
+8. Install everything needed to run Tahoe. On a modern Debian/Ubuntu-derived distribution, this command will get you everything you need:
 
 'apt-get install build-essential python-dev libffi-dev libssl-dev libyaml-dev virtualenv'
 
-9.Confirm Pip works. Many Python installations already include pip, but in case yours does not, 
+9. Confirm Pip works. Many Python installations already include pip, but in case yours does not, 
 get pip for python 2 with: 'curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py' and run 'python get-pip.py'.
 
 'pip --version'
 
-10.Confirm if Virtualenv works. If you do not have an OS-provided copy of virtualenv, install it with the instructions from the virtualenv documentation:
+10. Confirm if Virtualenv works. If you do not have an OS-provided copy of virtualenv, install it with the instructions from the virtualenv documentation:
 
 'virtualenv --version'
 
-11.Install the Latest Tahoe-LAFS Release
+11. Install the Latest Tahoe-LAFS Release
 We recommend creating a fresh virtualenv for your Tahoe-LAFS install, to isolate it from any python packages that are already installed (and to isolate the rest of your system from Tahoe’s dependencies).
 
 This example uses a virtualenv named venv, but you can call it anything you like. Many people prefer to keep all their virtualenvs in one place, like ~/.local/venvs/ or ~/venvs/.
