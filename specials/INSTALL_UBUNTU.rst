@@ -31,7 +31,7 @@ The following instructions are for installing tahoe on Ubuntu 20.04:
 
 'sudo update-alternatives --config python'
 
-7. Check the Python version currently running on the system.(it should show Python 2)
+7. Check the Python version currently running on the system.(it should show Python 2).
 
 'python --version'
 
@@ -40,7 +40,7 @@ The following instructions are for installing tahoe on Ubuntu 20.04:
 'apt-get install build-essential python-dev libffi-dev libssl-dev libyaml-dev virtualenv'
 
 9. Confirm Pip works. Many Python installations already include pip, but in case yours does not, 
-get pip for python 2 with: 'curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py' and run 'python get-pip.py'.
+get pip for Python 2 with: 'curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py' and run 'python get-pip.py'.
 
 'pip --version'
 
@@ -53,7 +53,7 @@ We recommend creating a fresh virtualenv for your Tahoe-LAFS install, to isolate
 
 This example uses a virtualenv named venv, but you can call it anything you like. Many people prefer to keep all their virtualenvs in one place, like ~/.local/venvs/ or ~/venvs/.
 
-It’s usually a good idea to upgrade the virtualenv’s pip and setuptools to their latest versions, with venv/bin/pip install -U pip setuptools. Many operating systems have an older version of virtualenv, which then includes older versions of pip and setuptools. Upgrading is easy, and only affects the virtualenv: not the rest of your computer.
+It’s usually a good idea to upgrade the virtualenv’s pip and setuptools to their latest versions, with 'venv/bin/pip install -U pip setuptools'. Many operating systems have an older version of virtualenv, which then includes older versions of pip and setuptools. Upgrading is easy, and only affects the virtualenv: not the rest of your computer.
 
 Then use the virtualenv’s pip to install the latest Tahoe-LAFS release from PyPI with 'venv/bin/pip install tahoe-lafs'. After installation, run 'venv/bin/tahoe --version' to confirm the install was successful:
 
