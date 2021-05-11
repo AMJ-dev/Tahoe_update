@@ -16,6 +16,7 @@ The following instructions are for installing Tahoe-LAFS on Ubuntu 20.04:
 2. Once the installation completes, you can check the Python 2, and python 3 version using the “–version” command.
 
 ``python2 --version``
+
 ``python3 --version``
 
 3. Check all the available Python versions in your system.
@@ -30,6 +31,7 @@ The following instructions are for installing Tahoe-LAFS on Ubuntu 20.04:
 5. Configure two Python alternatives. From the Step above, depending on the version of python in your system, we will set our priority.
 
 ``sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 1``
+
 ``sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2``
 
 6. Confirm if the Python alternatives are set, and whether they are in use.
@@ -45,7 +47,10 @@ The following instructions are for installing Tahoe-LAFS on Ubuntu 20.04:
 ``apt-get install build-essential python-dev libffi-dev libssl-dev libyaml-dev virtualenv``
 
 9. Confirm Pip works. Many Python installations already include pip, but in case yours does not; 
-get pip for Python 2 with: ``curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py`` and run ``python get-pip.py``.
+get pip for Python 2 with: 
+``curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py`` 
+and run 
+``python get-pip.py``.
 
 ``pip --version``
 
@@ -60,7 +65,7 @@ This example uses a virtualenv named venv, but you can call it anything you like
 
 It’s usually a good idea to upgrade the virtualenv’s pip and setuptools to their latest versions, with ``venv/bin/pip install -U pip setuptools``. Many operating systems have an older version of virtualenv, which then includes older versions of pip and setuptools. Upgrading is easy, and only affects the virtualenv: not the rest of your computer.
 
-Then use the virtualenv’s pip to install the latest Tahoe-LAFS release from PyPI with ``venv/bin/pip install tahoe-lafs``. After installation, run "venv/bin/tahoe --version" to confirm the install was successful:
+Then use the virtualenv’s pip to install the latest Tahoe-LAFS release from PyPI with ``venv/bin/pip install tahoe-lafs``. After installation, run ``venv/bin/tahoe --version`` to confirm the install was successful:
 
 ``virtualenv venv``
 New python executable in ~/venv/bin/python2.7
