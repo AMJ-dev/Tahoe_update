@@ -1,0 +1,16 @@
+I made the corrections as suggested("https://github.com/AMJ-dev/Tahoe_update/blob/main/specials/INSTALL_UBUNTU.rst").
+I found out that Tahoe supports the following OS and distros(I found this from the CircleCI pipeline):
+Ubuntu 20.04
+Ubuntu 18.04
+Ubuntu 16.04
+Fedora 29
+Fedora 28
+Debian 9
+Debian 10
+CentOS 8
+windows
+OS-X
+Nevertheless, I do not think the current installation guide here  covers the installation procedures, and guidelines for new Tahoe users to be able to run Tahoe conveniently across these distros and Operating Systems.
+I have started writing installation instructions for theses distros and operating systems.
+I am yet to commit any work done because I am yet to test the installation procedures being written.
+I believe new users will find it easier to run Tahoe if we have more detailed guidelines.
