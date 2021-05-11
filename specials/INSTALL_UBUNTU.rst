@@ -42,19 +42,24 @@ The following instructions are for installing Tahoe-LAFS on Ubuntu 20.04:
 
 ``python --version``
 
-8. Install everything needed to run Tahoe. On a modern Debian/Ubuntu-derived distribution, this command will get you everything you need:
+8. Install everything needed to run Tahoe. On a modern Debian/Ubuntu-derived distribution,
+ this command will get you everything you need:
 
 ``apt-get install build-essential python-dev libffi-dev libssl-dev libyaml-dev virtualenv``
 
-9. Confirm Pip works. Many Python installations already include pip, but in case yours does not; 
-get pip for Python 2 with: 
+9. Confirm Pip works. Many Python installations already include pip,
+ but in case yours does not; get pip for Python 2 with: 
+ 
 ``curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py`` 
+
 and run 
+
 ``python get-pip.py``.
 
 ``pip --version``
 
-10. Confirm if Virtualenv works. If you do not have an OS-provided copy of virtualenv, install it with the instructions from the virtualenv documentation:
+10. Confirm if Virtualenv works. If you do not have an OS-provided copy of virtualenv,
+ install it with the instructions from the virtualenv documentation.
 
 ``virtualenv --version``
 
