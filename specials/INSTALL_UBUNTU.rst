@@ -11,7 +11,7 @@ The following instructions are for installing Tahoe-LAFS on Ubuntu 20.04:
 
 1. Install Python 2.
 
-"sudo apt install python"
+``sudo apt install python``
 
 2. Once the installation completes, you can check the Python 2, and python 3 version using the “–version” command.
 
