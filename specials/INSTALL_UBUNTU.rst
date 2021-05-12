@@ -70,7 +70,10 @@ This example uses a virtualenv named venv, but you can call it anything you like
 
 It’s usually a good idea to upgrade the virtualenv’s pip and setuptools to their latest versions, with ``venv/bin/pip install -U pip setuptools``. Many operating systems have an older version of virtualenv, which then includes older versions of pip and setuptools. Upgrading is easy, and only affects the virtualenv: not the rest of your computer.
 
-Then use the virtualenv’s pip to install the latest Tahoe-LAFS release from PyPI with ``venv/bin/pip install tahoe-lafs``. After installation, run ``venv/bin/tahoe --version`` to confirm the install was successful:
+Then use the virtualenv’s pip to install the latest Tahoe-LAFS release from PyPI with 
+``venv/bin/pip install tahoe-lafs``
+
+After installation, run ``venv/bin/tahoe --version`` to confirm the install was successful:
 
 ``virtualenv venv``
 New python executable in ~/venv/bin/python2.7
