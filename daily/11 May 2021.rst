@@ -1,0 +1,3 @@
+I have fixed the typos here, and I have also written the documentation to python .rst standards. I am not too good with .rst documentation so I may have missed some things.
+learned about .rst for documentation in python.
+setup Virtual machines for Ubuntu 18.04 and CentOS 8 for testing new Tahoe installation guidelines.
