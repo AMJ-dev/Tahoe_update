@@ -1,0 +1,5 @@
+I have been working on the documentation for ubuntu 18.04 and CentOS 8.
+The Ubuntu 18.04 comes with Python 2 preinstalled which makes the installation process easier, but my Tahoe installation still breaks.
+I will troubleshoot further to fix whatever is causing the issue.
+My goal is do get all the documentations done by weekend.
+I heard someone talking about running Tahoe in Dockers ; I may try to write an installation documentation for Docker too.
